@@ -1,0 +1,229 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 5000px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .hero-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    min-height: 105px;
+    background-image: url(https://imageio.forbes.com/specials-images/imageserve/1175031702/Audience-at-a-confrerence/960x0.jpg?format=jpg&width=960bto);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: height 0.5s ease; /* Add transition property  smoother animation */
+  }
+
+  .page-content > .about_events{
+    direction: rtl;
+  }
+  
+  .hero-nav__inner {
+    z-index: 1;
+  }
+  
+  .hero-nav h1 {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .hero-nav:before {
+    content: "";
+    background: rgba(#000, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background 400ms;
+  }
+  
+  .hero-nav.fixme:before {
+    background: rgba(#000, 0.8);
+  }
+  
+  .page-content {
+    width: 30em;
+    margin: -80px auto 120px;
+    padding-top: 500px; /* Adjust this value to create space between header and content */
+    line-height: 1.625;
+    color: black;
+  }
+
+
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .header-shrink {
+    height: 100px;
+  }
+
+  .cart{
+      height: 350px !important;
+      border: 0.5px solid rgb(192, 192, 192);
+      border-radius: 15px;
+      background-color: rgb(255, 255, 255);
+      width: 250px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      box-shadow: 2px 2px 5px 2px rgba(162, 162, 162, 0.2);
+      padding: 20px 20px;
+    }
+
+    .cart-title{
+      font-weight: 400;
+      font-size: 22px;
+    }
+    .cart-duration{
+      font-size: x-small;
+    }
+
+    .cart-speaker{
+      font-size: 16px;
+      font-weight: 300;
+    }
+  .cart-container {
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for equal spacing on both sides */
+    width: 90%;
+    border: 1px solid rgba(194, 194, 194, 0.306);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(243, 243, 243) !important;
+  }
+
+
+  .cart-timeAndPlace{
+    width: 210px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+
+
+/* grid */
+/* ---------------------------------------------------- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
+    grid-gap: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #444;
+    margin: 0 auto; /* Center the grid horizontally */
+  }
+
+  .col-1 {width: 8%}
+
+
+  .col-2 {width: 17%}
+  
+  
+  .col-3 {width: 25%}
+  
+  
+  .col-4 {width: 33%}
+  
+  
+  .col-5 {width: 42%}
+  
+  
+  .col-6 {width: 50%}
+  
+  
+  .col-7 {width: 58%}
+  
+  
+  .col-8 {width: 57%}
+  
+  
+  .col-9 {width: 75%}
+  
+  
+  .col-10 {width: 83%}
+  
+  
+  .col-11 {width: 92%}
+  
+  
+  .col-12 {width: 100%}
+
+/* ---------------------------------------------------------------- */
+
+
+.hero-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-nav__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-container {
+    margin-top: 10px;
+  }
+}
+
+#search-button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#clear-search-button{
+  width: 60px;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+
+.edit-button{
+  border: 1px solid rgb(215, 215, 215) !important;
+  border-radius: 5px !important;
+  box-shadow: 0px !important;
+  padding: 4px 7px !important; 
+}
